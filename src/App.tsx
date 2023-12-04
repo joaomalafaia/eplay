@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Banner from './components/Banner'
 import Header from './components/Header'
 import { GlobalCss } from './styles'
-import Product from './components/Product'
+import ProductList from './components/ProductList'
 
 const rotas = createBrowserRouter([
   {
@@ -11,7 +11,8 @@ const rotas = createBrowserRouter([
     element: (
       <>
         <Banner />
-        <Product />
+        <ProductList title="Promoções" background="gray" />
+        <ProductList title="Lançamentos" background="black" />
       </>
     )
   }

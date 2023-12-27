@@ -9,7 +9,6 @@ export const Banner = styled.div`
   height: 480px;
   width: 100%;
 
-  background-image: url(${bannerIMG});
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

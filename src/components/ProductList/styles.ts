@@ -19,7 +19,7 @@ export const List = styled.ul`
   display: grid;
   margin-top: 40px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 24px;
+  gap: 24px;
 `
 
 export const SectionTitle = styled.h2`

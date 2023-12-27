@@ -1,27 +1,38 @@
+import { Game } from '../../pages/Home'
 import Button from '../Button'
 import Tag from '../Tag'
 import { Banner, ProductInfos } from './styles'
+import { formataPreco } from '../ProductList'
 
-const Hero = () => (
-  <Banner>
+export type Props = {
+  game: Game
+}
+
+const Hero = ({ game }: Props) => (
+  <Banner style={{ backgroundImage: `url(${game.media.cover}` }}>
     <div className="container">
       <div>
-        <Tag>RPG</Tag>
-        <Tag>PS5</Tag>
+        <Tag>{game.details.category}</Tag>
+        <Tag>{game.details.system}</Tag>
       </div>
       <ProductInfos>
-        <h2>Hogwarts Legacy</h2>
+        <h2>{game.name}</h2>
         <p>
-          <span>De R$ 250,00</span>
-          Por R$ 190,00
+          {game.prices.discount && (
+            /* aqui, o && substitui o ternário ? : */
+            <span>De {formataPreco(game.prices.old)}</span>
+          )}
+          {game.prices.current && <>Por {formataPreco(game.prices.current)}</>}
         </p>
-        <Button
-          variant="primary"
-          type="button"
-          title="clique aqui para adicionar ao carrinho"
-        >
-          Adicionar ao carrinho
-        </Button>
+        {game.prices.current && (
+          <Button
+            variant="primary"
+            type="button"
+            title="clique aqui para adicionar ao carrinho"
+          >
+            Adicionar ao carrinho
+          </Button>
+        )}
       </ProductInfos>
     </div>
   </Banner>

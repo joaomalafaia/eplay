@@ -19,9 +19,13 @@ export const CartContainer = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  display: flex;
+  display: none;
   justify-content: flex-end;
   z-index: 1;
+
+  &.opened {
+    display: flex;
+  }
 `
 
 export const Sidebar = styled.aside`
@@ -68,12 +72,12 @@ export const CartItem = styled.li`
     height: 80px;
     width: 80px;
     object-fit: cover;
+    margin-right: 24px;
   }
 
   div {
     color: ${colors.white};
     font-weight: bold;
-    margin-left: 24px;
 
     h3 {
       font-size: 16px;
@@ -81,7 +85,6 @@ export const CartItem = styled.li`
 
     span {
       display: block;
-
       font-size: 14px;
     }
 

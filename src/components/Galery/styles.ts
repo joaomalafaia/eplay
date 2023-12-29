@@ -3,6 +3,8 @@ import { colors } from '../../styles'
 
 export const Items = styled.ul`
   display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
 `
 
 export const Action = styled.div`
@@ -33,10 +35,6 @@ export const Item = styled.li`
     border: 2px solid ${colors.white};
     border-radius: 8px;
     object-fit: cover;
-  }
-
-  &:not(:last-child) {
-    margin-right: 16px;
   }
 
   &:hover {

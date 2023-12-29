@@ -4,26 +4,9 @@ import { Item, Items, Action, Modal, ModalContent } from './styles'
 import Section from '../Section'
 import { GalleryItem } from '../../pages/Home'
 
-import spiderman from '../../assets/images/banner-homem-aranha.png'
-import starWars from '../../assets/images/star_wars.png'
 import play from '../../assets/images/play.png'
 import zoom from '../../assets/images/zoom.png'
 import fechar from '../../assets/images/fechar.png'
-
-const mock: GalleryItem[] = [
-  {
-    type: 'image',
-    url: spiderman
-  },
-  {
-    type: 'image',
-    url: starWars
-  },
-  {
-    type: 'video',
-    url: 'https://www.youtube.com/embed/uHGShqcAHlQ?si=97JTqZIUyaUquBM0'
-  }
-]
 
 type Props = {
   defaultCover: string

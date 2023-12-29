@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
-import bannerIMG from '../../assets/images/fundo_hogwarts.png'
-import { colors } from '../../styles'
+import { breakpoints, colors } from '../../styles'
 import { TagContainer } from '../Tag/styles'
 
 export const Banner = styled.div`
@@ -11,10 +10,14 @@ export const Banner = styled.div`
 
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
   position: relative;
 
   padding-top: 16px;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    background-size: cover;
+  }
 
   &::after {
     position: absolute;

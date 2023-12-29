@@ -1,5 +1,6 @@
 import {
   FooterContainer,
+  Link,
   FooterLinks,
   FooterSection,
   SectionTitle
@@ -14,25 +15,19 @@ const Footer = () => (
         <SectionTitle>Categorias</SectionTitle>
         <FooterLinks>
           <li>
-            <a href="#">RPG</a>
+            <Link to="/categorias/#action">Ação</Link>
           </li>
           <li>
-            <a href="#">Ação</a>
+            <Link to="/categorias/#sports">Esportes</Link>
           </li>
           <li>
-            <a href="#">Aventura</a>
+            <Link to="/categorias/#fight">Luta</Link>
           </li>
           <li>
-            <a href="#">Esportes</a>
+            <Link to="/categorias/#rpg">RPG</Link>
           </li>
           <li>
-            <a href="#">Simulação</a>
-          </li>
-          <li>
-            <a href="#">Estratégia</a>
-          </li>
-          <li>
-            <a href="#">FPS</a>
+            <Link to="/categorias/#simulation">Simulação</Link>
           </li>
         </FooterLinks>
       </FooterSection>
@@ -40,13 +35,10 @@ const Footer = () => (
         <SectionTitle>Acesso rápido</SectionTitle>
         <FooterLinks>
           <li>
-            <a href="#">Novidades</a>
+            <Link to="/#on-sale">Promoções</Link>
           </li>
           <li>
-            <a href="#">Promoções</a>
-          </li>
-          <li>
-            <a href="#">Em breve</a>
+            <Link to="/#coming-soon">Em breve</Link>
           </li>
         </FooterLinks>
       </FooterSection>

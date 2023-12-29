@@ -27,10 +27,10 @@ const Header = () => {
               <Link to="/categorias">Categorias</Link>
             </LinkItem>
             <LinkItem>
-              <a href="#">Novidades</a>
+              <a href="#coming-soon">Novidades</a>
             </LinkItem>
             <LinkItem>
-              <a href="#">Promoções</a>
+              <a href="#on-sale">Promoções</a>
             </LinkItem>
           </Links>
         </nav>

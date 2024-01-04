@@ -28,4 +28,8 @@ export const CardContainer = styled.div`
   .buttonContainer {
     display: flex;
   }
+
+  .margin-top {
+    margin-top: 24px;
+  }
 `

@@ -22,12 +22,13 @@ export const Action = styled.div`
   transition: opacity 0.25s ease;
 
   img {
-    cursor: pointer;
+    cursor: zoom-in;
   }
 `
 
 export const Item = styled.li`
   position: relative;
+  cursor: zoom-in;
 
   > img {
     height: 150px;

@@ -1,5 +1,6 @@
 import Banner from '../../components/Banner'
 import ProductList from '../../components/ProductList'
+
 import { useGetOnSaleQuery, useGetSoonQuery } from '../../services/api'
 
 export interface GalleryItem {

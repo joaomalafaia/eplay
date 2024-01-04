@@ -41,7 +41,7 @@ export const Title = styled.h2`
   font-weight: bold;
 `
 
-export const Pricing = styled.p`
+export const Prices = styled.p`
   margin-top: 24px;
   font-size: 24px;
 

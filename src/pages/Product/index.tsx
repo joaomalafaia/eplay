@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom'
 
 import Hero from '../../components/Hero'
 import Section from '../../components/Section'
-import Galery from '../../components/Galery'
+import Gallery from '../../components/Galery'
 import Loader from '../../components/Loader'
 
 import { useGetGameQuery } from '../../services/api'
@@ -40,7 +40,7 @@ const Product = () => {
           {game.details.languages.join(', ')}
         </p>
       </Section>
-      <Galery
+      <Gallery
         name={game.name}
         defaultCover={game.media.cover}
         items={game.media.gallery}

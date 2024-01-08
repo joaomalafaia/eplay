@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../styles'
+import { breakpoints, colors } from '../../styles'
 
 export const CardContainer = styled.div`
   width: 100%;
@@ -27,6 +27,9 @@ export const CardContainer = styled.div`
 
   .buttonContainer {
     display: flex;
+    @media (max-width: ${breakpoints.tablet}) {
+      display: block;
+    }
   }
 
   .margin-top {

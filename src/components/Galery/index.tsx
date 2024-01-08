@@ -1,7 +1,6 @@
 import { useState } from 'react'
 
 import Section from '../Section'
-import { GalleryItem } from '../../pages/Home'
 
 import play from '../../assets/images/play.png'
 import zoom from '../../assets/images/zoom.png'
@@ -19,7 +18,7 @@ interface ModalState extends GalleryItem {
   isVisible: boolean
 }
 
-const Galery = ({ defaultCover, name, items }: Props) => {
+const Gallery = ({ defaultCover, name, items }: Props) => {
   const [modal, setModal] = useState<ModalState>({
     isVisible: false,
     type: 'image',
@@ -90,4 +89,4 @@ const Galery = ({ defaultCover, name, items }: Props) => {
   )
 }
 
-export default Galery
+export default Gallery
